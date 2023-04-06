@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: net.serenity-bdd:serenity-screenplay-rest:2.2.9" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.serenity-bdd" artifactId="serenity-screenplay-rest" version="2.2.9" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay-rest/2.2.9/f865947a514412a472e3c8ac53713d61c73db570/serenity-screenplay-rest-2.2.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay-rest/2.2.9/ace27d255b00aefb56b4f74af99382c7f4fac68e/serenity-screenplay-rest-2.2.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
