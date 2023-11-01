@@ -27,15 +27,32 @@ public class ConsumptionServicePost implements Task {
                         request
                             .header("Content-Type", "application/json")
                             .body(
-                                "{\"username\":"
-                                    + CHARACTER_QUOTATION_MARKS
+                                "{\"id\":"
                                     + (OnStage.theActorInTheSpotlight()
-                                        .recall(SessionVariables.USER_NAME.getKey())
+                                        .recall(SessionVariables.ID.getKey())
                                         .toString())
-                                    + "\",\"password\":"
-                                    + CHARACTER_QUOTATION_MARKS
+                                    + ",\"petid\":"
                                     + (OnStage.theActorInTheSpotlight()
-                                        .recall(SessionVariables.PASSWORD.getKey())
+                                        .recall(SessionVariables.PET_ID.getKey())
+                                        .toString())
+                                        + ",\"quantity\":"
+                                        + (OnStage.theActorInTheSpotlight()
+                                        .recall(SessionVariables.QUANTITY.getKey())
+                                        .toString())
+                                        + ",\"shipDate\":"
+                                        + CHARACTER_QUOTATION_MARKS
+                                        + (OnStage.theActorInTheSpotlight()
+                                        .recall(SessionVariables.SHIP_DATE.getKey())
+                                        .toString())
+                                        + "\",\"status\":"
+                                        + CHARACTER_QUOTATION_MARKS
+                                        + (OnStage.theActorInTheSpotlight()
+                                        .recall(SessionVariables.STATUS.getKey())
+                                        .toString())
+                                        + "\",\"complete\":"
+                                        + CHARACTER_QUOTATION_MARKS
+                                        + (OnStage.theActorInTheSpotlight()
+                                        .recall(SessionVariables.COMPLETE.getKey())
                                         .toString())
                                     + CHARACTER_QUOTATION_MARKS
                                     + "}")));

@@ -1,8 +1,18 @@
 package com.scp.retoback.conf;
 
 public enum SessionVariables {
-  USER_NAME("username"),
-  PASSWORD("password");
+  ID("id"),
+  PET_ID("petId"),
+
+  QUANTITY("quantity"),
+
+  SHIP_DATE("shipDate"),
+
+  STATUS("status"),
+
+  COMPLETE("complete"),
+
+  ORDEN_NUMBER("orden number");
 
   private String key;
   private String value;
