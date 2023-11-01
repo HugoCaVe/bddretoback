@@ -1,5 +1,5 @@
 # bddretoback
-Reto de automatización de back (Tyba)
+Reto de automatización de back (KOMET SALES)
 
 ## Introducción 🚀
 
