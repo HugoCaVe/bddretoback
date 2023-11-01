@@ -3,6 +3,7 @@ package com.scp.retoback.stepdefinitions;
 import static com.scp.retoback.utils.ExceptionsConstants.NO_TOKEN_INFORMATION_IS_DISPLAYED;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 
 import com.scp.retoback.conf.SessionVariables;
@@ -71,7 +72,8 @@ public class LoginFromApiStepDefinition {
             .should(
                     seeThatResponse("all the expected users should be returned",
                             response -> response.statusCode(200)
-                                    .body("id", hasItems( 7, 111,  0, "placed", true)))
+                                    .body("id", equalTo(7))
+                    )
             );
   }
 }
